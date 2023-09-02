@@ -1,7 +1,17 @@
 module.exports = {
-  extends: ["eslint:recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "prettier", "jest"],
+  plugins: ["@typescript-eslint", "prettier", "jest", "jsx-a11y"],
   env: {
     commonjs: true,
     es6: true,
@@ -141,6 +151,28 @@ module.exports = {
     "max-classes-per-file": ["error", 1],
     curly: "error",
     "no-console": "warn",
+"react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "react/boolean-prop-naming": "error",
+    "react/destructuring-assignment": "error",
+    "react/function-component-definition": [
+      2,
+      { namedComponents: "arrow-function" },
+    ],
+    "react/hook-use-state": "error",
+    "react/iframe-missing-sandbox": "error",
+    "react/jsx-boolean-value": "error",
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-handler-names": "error",
+    "react/jsx-no-constructed-context-values": "error",
+    "react/jsx-no-script-url": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/jsx-no-useless-fragment": "error",
+    "react/no-danger": "error",
+    "react/no-multi-comp": "error",
+    "react/no-typos": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
   },
-
 };
