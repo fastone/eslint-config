@@ -23,8 +23,8 @@ module.exports = {
         },
         ecmaVersion: 'latest',
         sourceType: 'module',
-        tsconfigRootDir: '.',
-        project: ['./tsconfig.json', './tsconfig.node.json']
+        tsconfigRootDir: __dirname,
+        project: ['tsconfig.json', 'tsconfig.node.json']
     },
     // Configuring third-party plugins
     plugins: [
