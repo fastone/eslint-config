@@ -1,7 +1,7 @@
 module.exports = {
     env: {
         browser: true,
-        es6: true
+        es2020: true
     },
     extends: [
       'eslint:recommended',
@@ -24,7 +24,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
         tsconfigRootDir: '.',
-        project: ['./tsconfig.json']
+        project: ['./tsconfig.json', './tsconfig.node.json']
     },
     // Configuring third-party plugins
     plugins: [
