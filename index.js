@@ -9,6 +9,7 @@ module.exports = {
       'airbnb-typescript',
       'plugin:react/recommended',
       'plugin:react/jsx-runtime',
+      'plugin:react-hooks/recommended',      
       'plugin:@typescript-eslint/recommended',
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
       'plugin:prettier/recommended',
@@ -28,6 +29,7 @@ module.exports = {
     // Configuring third-party plugins
     plugins: [
       'react',
+      'react-refresh',
       '@typescript-eslint'
     ],
     // Resolve imports
@@ -68,6 +70,10 @@ module.exports = {
             }
         ],
         'react-hooks/exhaustive-deps': 'off',
+        'react-refresh/only-export-components': [
+            'warn',
+            { allowConstantExport: true },
+        ],
         // Enforce the use of the shorthand syntax.
         'object-shorthand': 'error',
         'no-console': 'warn'
