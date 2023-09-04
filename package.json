@@ -24,5 +24,14 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "prettier": "^3.0.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fastone/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fastone/eslint-config/issues"
+  },
+  "homepage": "https://github.com/fastone/eslint-config#readme"
 }
