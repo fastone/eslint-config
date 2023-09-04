@@ -9,7 +9,7 @@ This is a sharable eslint config for TypeScript React projects.
 One config to rule all them projects.
 
 ## Installation
-`npm install https://github.com/fastone/eslint-config.git`
+`npm install @fastone/eslint-config`
 
 ## Usage
 Create `.eslintrc.cjs` in the root of your project with the following content:
@@ -26,5 +26,4 @@ module.exports = {
 
 ## To Do
 
-- [ ] Make this a public package on npm `npm install @fastone/eslint-config`
 - [ ] Double check and update the rules while using it in a real project
