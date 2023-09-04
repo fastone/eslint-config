@@ -24,7 +24,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
         tsconfigRootDir: '.',
-        project: ['./tsconfig.json', './tsconfig.node.json', './.eslintrc.cjs']
+        project: ['./tsconfig.json', './tsconfig.node.json']
     },
     // Configuring third-party plugins
     plugins: [
@@ -49,13 +49,14 @@ module.exports = {
         'prettier/prettier': [
             'error',
             {
-                printWidth: 80,
                 endOfLine: 'lf',
+                indentStyle: 'space',
+                printWidth: 80,
+                requireConfig: false,
                 singleQuote: true,
                 tabWidth: 2,
-                indentStyle: 'space',
+                trailingComma: 'es5',
                 useTabs: true,
-                trailingComma: 'es5'
             }
         ],
         // Disallow the `any` type.

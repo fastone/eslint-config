@@ -1,29 +1,78 @@
 # @fastone/eslint-config
-    
+
 [![npm version](https://badge.fury.io/js/%40fastone%2Feslint-config.svg)](https://badge.fury.io/js/%40fastone%2Feslint-config)
 [![npm downloads](https://img.shields.io/npm/dm/%40fastone%2Feslint-config.svg)](https://www.npmjs.com/package/%40fastone%2Feslint-config)
-[![GitHub stars](https://img.shields.io/github/stars/fastone/eslint-config.svg?style=social&label=Star&maxAge=2592000)](https://github.com/fastone/eslint-config)            
+[![GitHub stars](https://img.shields.io/github/stars/fastone/eslint-config.svg?style=social&label=Star&maxAge=2592000)](https://github.com/fastone/eslint-config)
 
 ## Description
+
 This is a sharable eslint config for TypeScript React projects.
 One config to rule all them projects.
 
 ## Installation
-`npm install @fastone/eslint-config`
 
-## Usage
+To install the package run
+
+```sh
+foo@bar:~$ npm install @fastone/eslint-config
+```
+
 Create `.eslintrc.cjs` in the root of your project with the following content:
 
-```
+```js
 /** @type {import('eslint').Linter.Config} */
-module.exports = {
-	extends: ['@fastone/eslint-config'],
-	parserOptions: {
-		tsconfigRootDir: __dirname,
-	},
+export default {
+    extends: ['@fastone/eslint-config'],
+    parserOptions: {
+        tsconfigRootDir: __dirname
+    }
 };
+```
+
+## Linting
+
+After you've added the following to your `package.json`:
+
+```json
+"scripts": {
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint:fix": "eslint --ext .ts,.tsx . --fix"
+}
+```
+
+You'll be able to run the linting commands with:
+
+```sh
+foo@bar:~$ npm run lint
+foo@bar:~$ npm run lint:fix
+```
+
+## VSCode
+
+You can also add the following to your `.vscode/settings.json` to lint on save:
+( You need to install the `Prettier - Code formatter` [esbenp.prettier-vscode] extension)
+
+```json
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+```
+
+### Parsing error: ESLint was configured....
+
+To hide the following error from vscode:
+
+```
+Parsing error: ESLint was configured to run on `<tsconfigRootDir>/.eslintrc.cjs` using `parserOptions.project`
+```
+
+add the following to your `.eslintrc.cjs`:
+
+```js
+ignorePatterns: ['**/*.config.js', '**/*.config.cjs', '**/*.config.ts', '**/*.config.tsx', '.eslintrc.cjs'],
 ```
 
 ## To Do
 
-- [ ] Double check and update the rules while using it in a real project
+-   [ ] Double check and update the rules while using it in a real project

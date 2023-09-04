@@ -1,7 +1,7 @@
 {
   "name": "@fastone/eslint-config",
   "author": "fastone",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "ESLint config to rule them all",
   "main": "index.js",
   "scripts": {
