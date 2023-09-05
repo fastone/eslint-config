@@ -1,7 +1,7 @@
 # @fastone/eslint-config
 
-[![npm version](https://badge.fury.io/js/%40fastone%2Feslint-config.svg)](https://badge.fury.io/js/%40fastone%2Feslint-config)
-[![npm downloads](https://img.shields.io/npm/dm/%40fastone%2Feslint-config.svg)](https://www.npmjs.com/package/%40fastone%2Feslint-config)
+[![npm version](https://badge.fury.io/js/@fastone%2Feslint-config.svg)](https://badge.fury.io/js/@fastone%2Feslint-config)
+[![npm downloads](https://img.shields.io/npm/dm/@fastone%2Feslint-config.svg)](https://www.npmjs.com/package/@fastone%2Feslint-config)
 [![GitHub stars](https://img.shields.io/github/stars/fastone/eslint-config.svg?style=social&label=Star&maxAge=2592000)](https://github.com/fastone/eslint-config)
 
 ## Description
