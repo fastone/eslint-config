@@ -13,7 +13,8 @@ module.exports = {
       'plugin:@typescript-eslint/recommended',
       'plugin:@typescript-eslint/recommended-requiring-type-checking',
       'plugin:prettier/recommended',
-      'plugin:import/recommended'
+      'plugin:import/recommended',
+      'plugin:tailwindcss/recommended',
     ],
     // Specifying Parser
     parser: '@typescript-eslint/parser',
@@ -30,7 +31,8 @@ module.exports = {
     plugins: [
       'react',
       'react-refresh',
-      '@typescript-eslint'
+      '@typescript-eslint',
+      'tailwindcss'
     ],
     // Resolve imports
     settings: {
