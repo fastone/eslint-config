@@ -1,9 +1,8 @@
 # @fastone/eslint-config
 
-[![npm version](https://badge.fury.io/js/@fastone%2Feslint-config.svg)](https://badge.fury.io/js/@fastone%2Feslint-config)
-[![npm downloads](https://img.shields.io/npm/dm/@fastone%2Feslint-config.svg)](https://www.npmjs.com/package/@fastone%2Feslint-config)
-[![GitHub stars](https://img.shields.io/github/stars/fastone/eslint-config.svg?style=social&label=Star&maxAge=2592000)](https://github.com/fastone/eslint-config)
-
+![npm (scoped)](https://img.shields.io/npm/v/%40fastone/eslint-config?style=social&logo=npm)
+![npm](https://img.shields.io/npm/dt/%40fastone%2Feslint-config?style=social&logo=npm)
+![GitHub stars](https://img.shields.io/github/stars/fastone/eslint-config.svg?style=social&logo=github)
 ## Description
 
 This is a sharable eslint config for TypeScript React projects.
