@@ -1,7 +1,7 @@
 {
   "name": "@fastone/eslint-config",
   "author": "fastone",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "ESLint config to rule them all",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
-    "eslint": "^8.48.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.0.0",

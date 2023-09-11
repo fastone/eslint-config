@@ -80,6 +80,9 @@ module.exports = {
         ],
         // Enforce the use of the shorthand syntax.
         'object-shorthand': 'error',
-        'no-console': 'warn'
+        'no-console': 'warn',
+        // Disable the eslint tailwindcss classname ordering,
+        // conflicts with prettier
+        "tailwindcss/classnames-order": "off"
     }
 };
